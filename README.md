@@ -21,7 +21,7 @@ Looking at relationships between:
 - Take a look at some examples to get you started: https://github.com/Yelp/dataset-examples.
 
 business
-``
+```
 {
     'type': 'business',
     'business_id': (encrypted business id),
