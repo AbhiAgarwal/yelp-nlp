@@ -87,8 +87,8 @@ if __name__ == '__main__':
     
     # 2. Cleaning Data Step One
     # current: user_id,review_id,text,votes.cool,business_id,votes.funny,stars,date,type,votes.useful
-    # removing: user_id,review_id,business_id,date,type 
-    # becomes: text,votes.cool,votes.funny,stars,votes.useful
+    # removing: user_id,review_id,date,type 
+    # becomes: text,votes.cool,business_id,votes.funny,stars,votes.useful
     if not os.path.isfile(csv_file_removed):
         print 'Cleaning Data Now'
         with open(csv_file, "rb") as fp_in, open(csv_file_removed, "wb") as fp_out:
@@ -97,9 +97,8 @@ if __name__ == '__main__':
             for row in reader:
                 del row[0] # user_id
                 del row[0] # review_id
-                del row[2] # business_id
-                del row[4] # date
-                del row[4] # type
+                del row[5] # date
+                del row[5] # type
                 writer.writerow(row)
 
     # Go through the arguments
