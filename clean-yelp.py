@@ -6,7 +6,7 @@ Cleaning Yelp dataset
 """
 
 # -*- coding: utf-8 -*-
-import argparse, collections, os, csv, sys
+import argparse, collections, os, csv, sys, locale
 import simplejson as json
 
 def read_and_write_file(json_file_path, csv_file_path, column_names):
@@ -89,8 +89,8 @@ if __name__ == '__main__':
     # current: user_id,review_id,text,votes.cool,business_id,votes.funny,stars,date,type,votes.useful
     # removing: user_id,review_id,business_id,date,type 
     # becomes: text,votes.cool,votes.funny,stars,votes.useful
-    print 'Cleaning Data Now'
     if not os.path.isfile(csv_file_removed):
+        print 'Cleaning Data Now'
         with open(csv_file, "rb") as fp_in, open(csv_file_removed, "wb") as fp_out:
             reader = csv.reader(fp_in, delimiter=",")
             writer = csv.writer(fp_out, delimiter=",")
@@ -101,3 +101,16 @@ if __name__ == '__main__':
                 del row[4] # date
                 del row[4] # type
                 writer.writerow(row)
+
+    # Go through the arguments
+    for i in sys.argv:
+        # Number of Elements
+        # It starts with the header so we have to start with -1
+        locale.setlocale(locale.LC_ALL, 'en_US')
+        if i == 'elements':
+            numberOfElements = -1
+            with open(csv_file, "rb") as fp_in:
+                reader = csv.reader(fp_in, delimiter=",")
+                for row in reader:
+                    numberOfElements += 1
+            print 'Number of Elements:', locale.format("%d", numberOfElements, grouping=True)
