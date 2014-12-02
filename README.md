@@ -110,3 +110,7 @@ tip
     'likes': (count),
 }
 ```
+
+Business			Review				User			
+Lat	Long	Stars Total	Stars (Review)	Text	Sentiment	Vote*	Review Count	Avg Stars	Yelping Since	Fans
+
