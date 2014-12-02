@@ -110,7 +110,23 @@ tip
     'likes': (count),
 }
 ```
+
+CSV Output
+===
 Business: Lat	Long	Stars 
 Review: Total	Stars (Review)	Text	Sentiment	Vote*
 User: Review Count	Avg Stars	Yelping Since	Fans
+
+
+Questions
+===
+Stuff we can do:			
+- Crime rate vs sentiment		Plot	Regression
+- Yelping period vs Avg Rate		Plot	Regression
+- Distribution of Reviews to Users		Pie Chart	
+- Depression vs Avg Rating      Plot
+- Depression vs Yelp Review     Plot	
+- Bubble of freq			
+    - Picking out users with most extreme sentiment			
+    - Word frequency of user			
 
