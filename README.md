@@ -130,3 +130,7 @@ Stuff we can do:
     - Picking out users with most extreme sentiment			
     - Word frequency of user			
 
+	
+Presentation
+===
+https://docs.google.com/a/nyu.edu/presentation/d/1_BxqvhDsR2Sgj8i5hNiwoocppzBOaLT_8G8CXmUUOr8/edit?usp=sharing
