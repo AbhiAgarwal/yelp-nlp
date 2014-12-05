@@ -25,6 +25,9 @@ yelp-nlp
 {u'ON': 305, u'XGL': 1, u'MN': 1, u'ELN': 8, u'MA': 1, u'NY': 2, u'CA': 1, u'NC': 1, u'MLN': 102, u'WI': 2118, u'SCB': 2, u'NTH': 1, u'FIF': 3, u'GA': 1, u'KHL': 1, u'AZ': 22181, u'EDH': 2841, u'NV': 14583}
 ```
 
+- Amount of users:
+    - 252,898
+
 --
 
 #### Majority of the reviews:
@@ -82,6 +85,27 @@ yelp-nlp
 Business: Lat   Long    Stars 
 Review: Total   Stars (Review)  Text    Sentiment   Vote*
 User: Review Count  Avg Stars   Yelping Since   Fans
+
+--
+
+##### JSON Example
+
+```
+{u'average_stars': 3.86,
+ u'business_stars': 4,
+ u'fans': 53,
+ u'latitude': 36.0839363,
+ u'longitude': -115.1194225,
+ u'review_count': 1025,
+ u'review_id': u'S412bghmc2IgqOZUiKmwHQ',
+ u'review_stars': 4.5,
+ u'sentiment': 0,
+ u'stars': 4,
+ u'text': u"It's not often that you step into a store and feel like you've been transported to another realm.  That's what you get at this Psychic Eye Book Shop location though.  The smells and the sounds penetrate your senses as your eyes dart from one unique lil object to the next.  It's a great place to go for a different sort of gift, psychic readings or just to browse.  \n\nYou can get books, candles, jewelry, incense, gifts from other countries, house decor, meditation tools, and more.\n\nMy friends and I like it but only make it in every couple of years, it seems.  Btw.. this is a new location!  Check the address if you're gonna stop in. :)\n\nMight see ya there!",
+ u'user_votes': u'fPHLPrymsyb6WSFFKoMrTQ',
+ u'votes': {u'cool': 1, u'funny': 0, u'useful': 1},
+ u'yelping_since': u'2007-03'}
+ ```
 
 #### Questions
 
