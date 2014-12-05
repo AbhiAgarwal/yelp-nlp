@@ -3,7 +3,7 @@ import argparse, collections, os, csv, sys, locale
 import simplejson as json
 
 if __name__ == '__main__':
-	stateNeeded = 'ON'
+	stateNeeded = 'MLN'
 	business_json_file = './yelp/yelp_academic_dataset_business.json'
 
 	businessData = []

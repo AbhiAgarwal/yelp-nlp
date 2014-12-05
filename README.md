@@ -25,6 +25,10 @@ yelp-nlp
 {u'ON': 305, u'XGL': 1, u'MN': 1, u'ELN': 8, u'MA': 1, u'NY': 2, u'CA': 1, u'NC': 1, u'MLN': 102, u'WI': 2118, u'SCB': 2, u'NTH': 1, u'FIF': 3, u'GA': 1, u'KHL': 1, u'AZ': 22181, u'EDH': 2841, u'NV': 14583}
 ```
 
+--
+
+#### Majority of the reviews:
+
 - AZ State data:
     - Companies in AZ State: 22181
     - Reviews in AZ State: 493009
@@ -41,6 +45,18 @@ yelp-nlp
     - Companies in ON State: 305
     - Reviews in ON State: 2158
 
+- MLN State Data:
+    - Companies in MLN State: 102
+    - Reviews in MLN State:
+
+- ELN State Data:
+    - Companies in ELN State: 8
+    - Reviews in ELN State: 
+
+--
+
+#### Negligible amount
+
 - NY State data:
     - Companies in New York State: 2
     - Reviews in New York State: 13
@@ -48,6 +64,14 @@ yelp-nlp
 - MN State Data:
     - Companies in MN State: 1
     - Reviews in MN State: 3
+
+- CA State Data:
+    - Companies in MN State: 1
+    - Reviews in MN State:
+
+- MA State Data:
+    - Companies in MN State: 1
+    - Reviews in MN State:
 
 - XGL State Data:
     - Companies in XGL State: 1
