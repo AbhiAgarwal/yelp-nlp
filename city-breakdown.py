@@ -57,13 +57,13 @@ if __name__ == '__main__':
 		i['review_count'] = currentUser['review_count']
 		i['average_stars'] = currentUser['average_stars']
 		i['yelping_since'] = currentUser['yelping_since']
-		i['user_votes'] = currentUser['user_id']
+		i['user_votes'] = currentUser['votes']
 		i['fans'] = currentUser['fans']
 
 		del i['user_id']
 		del i['type']
 		del i['date']
 		del i['business_id']
-		
+
 	with open('./yelp-' + stateNeeded + '/review.json', 'w') as outfile:
 		json.dump(reviewCityValue, outfile)
