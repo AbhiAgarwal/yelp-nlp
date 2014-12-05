@@ -1,21 +1,21 @@
 yelp-nlp
 ========
 
-Looking at relationships between:
+#### Looking at relationships between:
 
 1. Yelp: Number of reviews
 2. Yelp: Text sentiment of reviews
 3. Yelp: Stars of reviews
 4. City Data: Various other interesting city data (transport, crime rate, employment etc.)
 
-# Setup
+#### Setup
 
 1. Download dataset https://www.yelp.com/dataset_challenge/dataset
 2. Extract the file, and rename it to `yelp` and put it into this folder.
 3. We clean the yelp data using the `clean-yelp.py` file.
 4. We clean the city data using the `clean-city.py` file.
 
-# Notes on the dataset
+#### Notes on the dataset
 
 - Each file is composed of a single object type, one json-object per-line.
 - Take a look at some examples to get you started: https://github.com/Yelp/dataset-examples.
@@ -25,9 +25,58 @@ Looking at relationships between:
 {u'ON': 305, u'XGL': 1, u'MN': 1, u'ELN': 8, u'MA': 1, u'NY': 2, u'CA': 1, u'NC': 1, u'MLN': 102, u'WI': 2118, u'SCB': 2, u'NTH': 1, u'FIF': 3, u'GA': 1, u'KHL': 1, u'AZ': 22181, u'EDH': 2841, u'NV': 14583}
 ```
 
-- New York data:
+- AZ State data:
+    - Companies in AZ State: 22181
+    - Reviews in AZ State: 493009
+
+- NV State Data:
+    - Companies in Nevada State: 14583
+    - Reviews in Nevadate State: 571914
+
+- EDH State Data:
+    - Companies in EDH State: 2841
+    - Reviews in EDH State: 20873
+
+- ON State Data:
+    - Companies in ON State: 305
+    - Reviews in ON State: 2158
+
+- NY State data:
     - Companies in New York State: 2
     - Reviews in New York State: 13
+
+- MN State Data:
+    - Companies in MN State: 1
+    - Reviews in MN State: 3
+
+- XGL State Data:
+    - Companies in XGL State: 1
+    - Reviews in XGL State: 3
+
+#### CSV Output
+
+Business: Lat   Long    Stars 
+Review: Total   Stars (Review)  Text    Sentiment   Vote*
+User: Review Count  Avg Stars   Yelping Since   Fans
+
+
+#### Questions
+
+Stuff we can do:            
+- Crime rate vs sentiment       Plot    Regression
+- Yelping period vs Avg Rate        Plot    Regression
+- Distribution of Reviews to Users      Pie Chart   
+- Depression vs Avg Rating      Plot
+- Depression vs Yelp Review     Plot    
+- Bubble of freq            
+    - Picking out users with most extreme sentiment         
+    - Word frequency of user            
+
+    
+#### Presentation 
+- https://docs.google.com/a/nyu.edu/presentation/d/1_BxqvhDsR2Sgj8i5hNiwoocppzBOaLT_8G8CXmUUOr8/edit?usp=sharing
+
+####Extra Information
 
 business
 ```
@@ -119,27 +168,3 @@ tip
     'likes': (count),
 }
 ```
-
-CSV Output
-===
-Business: Lat	Long	Stars 
-Review: Total	Stars (Review)	Text	Sentiment	Vote*
-User: Review Count	Avg Stars	Yelping Since	Fans
-
-
-Questions
-===
-Stuff we can do:			
-- Crime rate vs sentiment		Plot	Regression
-- Yelping period vs Avg Rate		Plot	Regression
-- Distribution of Reviews to Users		Pie Chart	
-- Depression vs Avg Rating      Plot
-- Depression vs Yelp Review     Plot	
-- Bubble of freq			
-    - Picking out users with most extreme sentiment			
-    - Word frequency of user			
-
-	
-Presentation
-===
-https://docs.google.com/a/nyu.edu/presentation/d/1_BxqvhDsR2Sgj8i5hNiwoocppzBOaLT_8G8CXmUUOr8/edit?usp=sharing
