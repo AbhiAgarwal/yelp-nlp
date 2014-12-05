@@ -19,6 +19,12 @@ Looking at relationships between:
 
 - Each file is composed of a single object type, one json-object per-line.
 - Take a look at some examples to get you started: https://github.com/Yelp/dataset-examples.
+- Amount of businesses per state:
+
+```
+{u'ON': 305, u'XGL': 1, u'MN': 1, u'ELN': 8, u'MA': 1, u'NY': 2, u'CA': 1, u'NC': 1, u'MLN': 102, u'WI': 2118, u'SCB': 2, u'NTH': 1, u'FIF': 3, u'GA': 1, u'KHL': 1, u'AZ': 22181, u'EDH': 2841, u'NV': 14583}
+```
+
 
 business
 ```
