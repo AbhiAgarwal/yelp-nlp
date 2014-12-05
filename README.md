@@ -29,27 +29,27 @@ yelp-nlp
 
 #### Majority of the reviews:
 
-- AZ State data:
+- AZ (Arizona) State data:
     - Companies in AZ State: 22181
     - Reviews in AZ State: 493009
 
-- NV State Data:
+- NV (Nevada) State Data:
     - Companies in Nevada State: 14583
     - Reviews in Nevadate State: 571914
 
-- EDH State Data:
+- EDH (Edinburgh, UK) State Data:
     - Companies in EDH State: 2841
     - Reviews in EDH State: 20873
 
-- ON State Data:
-    - Companies in ON State: 305
-    - Reviews in ON State: 2158
-
-- MLN State Data:
+- MLN (Edinburgh, UK) State Data:
     - Companies in MLN State: 102
     - Reviews in MLN State: 600
 
-- ELN State Data:
+- ON (Toronto) State Data:
+    - Companies in ON State: 305
+    - Reviews in ON State: 2158
+
+- ELN (Musselburgh, UK) State Data:
     - Companies in ELN State: 8
     - Reviews in ELN State: 21
 
