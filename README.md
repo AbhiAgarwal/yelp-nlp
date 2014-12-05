@@ -79,9 +79,9 @@ yelp-nlp
 
 #### CSV Output
 
-Business: Lat   Long    Stars 
-Review: Total   Stars (Review)  Text    Sentiment   Vote*
-User: Review Count  Avg Stars   Yelping Since   Fans
+- Business: Lat   Long    Stars 
+- Review: Total   Stars (Review)  Text    Sentiment   Vote*
+- User: Review Count  Avg Stars   Yelping Since   Fans
 
 #### Questions
 
