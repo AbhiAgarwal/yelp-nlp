@@ -47,11 +47,11 @@ yelp-nlp
 
 - MLN State Data:
     - Companies in MLN State: 102
-    - Reviews in MLN State:
+    - Reviews in MLN State: 600
 
 - ELN State Data:
     - Companies in ELN State: 8
-    - Reviews in ELN State: 
+    - Reviews in ELN State: 21
 
 --
 
@@ -67,11 +67,11 @@ yelp-nlp
 
 - CA State Data:
     - Companies in MN State: 1
-    - Reviews in MN State:
+    - Reviews in MN State: 3
 
 - MA State Data:
     - Companies in MN State: 1
-    - Reviews in MN State:
+    - Reviews in MN State: 5
 
 - XGL State Data:
     - Companies in XGL State: 1
@@ -83,7 +83,6 @@ Business: Lat   Long    Stars
 Review: Total   Stars (Review)  Text    Sentiment   Vote*
 User: Review Count  Avg Stars   Yelping Since   Fans
 
-
 #### Questions
 
 Stuff we can do:            
@@ -94,9 +93,8 @@ Stuff we can do:
 - Depression vs Yelp Review     Plot    
 - Bubble of freq            
     - Picking out users with most extreme sentiment         
-    - Word frequency of user            
+    - Word frequency of user
 
-    
 #### Presentation 
 - https://docs.google.com/a/nyu.edu/presentation/d/1_BxqvhDsR2Sgj8i5hNiwoocppzBOaLT_8G8CXmUUOr8/edit?usp=sharing
 
