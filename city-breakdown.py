@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 import argparse, collections, os, csv, sys, locale
 import simplejson as json
+from textblob import TextBlob
+
+def sentimentAnalysis(text):
+	blob = TextBlob(text)
+	return blob.sentiment.polarity
 
 if __name__ == '__main__':
 	stateNeeded = 'NV'
@@ -53,7 +58,7 @@ if __name__ == '__main__':
 		i['longitude'] = currentBusiness['longitude']
 		i['business_stars'] = i['stars']
 		i['review_stars'] = currentBusiness['stars']
-		i['sentiment'] = 0
+		i['sentiment'] = sentimentAnalysis(i['text'])
 		i['review_count'] = currentUser['review_count']
 		i['average_stars'] = currentUser['average_stars']
 		i['yelping_since'] = currentUser['yelping_since']
