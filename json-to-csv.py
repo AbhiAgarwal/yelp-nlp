@@ -19,9 +19,10 @@ f = csv.writer(open(csvFile, "wb+"))
 f.writerow(["latitude", "longitude", "stars", "review_stars", "text", "sentiment", "votes", "review_count", "average_stars", "yelping_since", "fans"])
 
 currentCount = 0
+limit = 10000
 
 for x in reviewData:
-    if currentCount < 10000:
+    if currentCount < limit:
         f.writerow([unicode(x["latitude"]).encode(("utf-8")),
                     unicode(x["longitude"]).encode(("utf-8")),
                     unicode(x["stars"]).encode(("utf-8")),
