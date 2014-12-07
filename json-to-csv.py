@@ -4,8 +4,8 @@ import csv
 import json
 
 stateNeeded = 'NV'
-reviewFile = './review.json'
-csvFile = './review_100.csv'
+reviewFile = './yelp-' + stateNeeded + '/review.json'
+csvFile = './yelp-' + stateNeeded + '/review_1000.csv'
 
 reviewData = []
 with open(reviewFile) as f:
@@ -19,7 +19,7 @@ f = csv.writer(open(csvFile, "wb+"))
 f.writerow(["latitude", "longitude", "stars", "review_stars", "text", "sentiment", "review_count", "average_stars", "yelping_since", "fans", "funnyVotes", "usefulVotes", "coolVotes"])
 
 currentCount = 0
-limit = 100
+limit = 1000
 
 for x in reviewData:
     if currentCount < limit:
