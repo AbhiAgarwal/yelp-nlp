@@ -30,11 +30,11 @@ if __name__ == '__main__':
 				userHashMap[reviewUser]['userReviews'] = []
 				userHashMap[reviewUser]['userReviews'].append(i)
 
-subset = {}
-currentCount = 0
-for i in userHashMap.keys():
-	if currentCount < 1000:
-		subset[i] = userHashMap[i]
-		currentCount += 1
-with open('./yelp-user/user_1000.json', 'w') as outfile:
-	json.dump(subset, outfile)
+	subset = {}
+	currentCount = 0
+	for i in userHashMap.keys():
+		if currentCount < 1000:
+			subset[i] = userHashMap[i]
+			currentCount += 1
+	with open('./yelp-user/user_1000.json', 'w') as outfile:
+		json.dump(subset, outfile)
