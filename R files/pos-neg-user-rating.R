@@ -1,8 +1,6 @@
 user_1000 <- read.csv( file = "./yelp-user/user_improved_1000.csv")
 user_10000 <- read.csv( file = "./yelp-user/user_improved_10000.csv")
 
-review_1000 <- read.csv( file = "./yelp-NV/review_1000.csv")
-
 depressed_subset <- subset(user_10000, averageSentiment < 0)
 happy_subset <- subset(user_10000, averageSentiment > 0)
 
