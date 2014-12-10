@@ -1,6 +1,6 @@
 library(zoo)
 
-review <- read.csv( file = "./yelp-NV/review.csv")
+review <- read.csv( file = "../yelp-NV/review.csv")
 
 # convert dates to YYYY-MM-DD
 d <- review$yelping_since
@@ -13,7 +13,7 @@ dates_vs_cou <- cor( numeric_dates , review$review_count)
 
 #lm
 lm.out = lm(review$review_count ~ numeric_dates)
-#summary( lm.out)
+summary( lm.out)
 
 plot(numeric_dates, review$review_count, main="Plot", ylim = range (0,3000), ylab = "Number of Reviews", xlab = "Member Since")
 abline(lm.out, col="red")

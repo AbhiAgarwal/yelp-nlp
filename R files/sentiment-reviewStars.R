@@ -1,11 +1,11 @@
-review <- read.csv( file = "./yelp-NV/review.csv")
+#review <- read.csv( file = "./yelp-NV/review.csv")
 
 #correlation
 sentiment_reviewStars <- cor( review$sentiment , review$review_stars)
 
 #lm
-lm.out = lm(review$sentiment ~ review$review_stars)
-summary( lm.out)
+lm2.out = lm2(review$sentiment ~ review$review_stars)
+summary( lm2.out)
 
 plot(review$review_stars , review$sentiment)
-abline(lm.out, col="red")
+abline(lm2.out, col="red")
